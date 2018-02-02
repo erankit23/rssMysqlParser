@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>RSS Feed</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>List Feeder Form</h1>
+    <form action="#" th:action="@{/savelistFeeder}" th:object="${urlObject}"  method="post">
+    	<p>Enter URL: <input type="text" th:field="*{inputUrl}" /></p>
+        
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+    
+    <h1>Feeder Finder Form</h1>
+    <form action="#" th:action="@{/saveFeederFinder}" th:object="${urlObject}"  method="post">
+    	<p>Enter URL: <input type="text" th:field="*{inputUrl}" /></p>
+        
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
